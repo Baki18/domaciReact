@@ -3,9 +3,12 @@ import { PROIZVODI } from '../../proizvodi'
 import { ProdavnicaKontekst } from "../../kontekst/prodavnica-kontekst"
 import {ElKorpe} from './element-korpe'
 import "./korpa.css";
+import { useNavigate } from 'react-router-dom';
 
 export const Korpa = (props) => {
-  const {elKorpe} = useContext(ProdavnicaKontekst)
+  const {elKorpe, vratiUkupnuCenu} = useContext(ProdavnicaKontekst)
+  const ukupnaCena = vratiUkupnuCenu()
+  const navigacija = useNavigate()
 
   return (
     <div className='cart'>
@@ -21,6 +24,14 @@ export const Korpa = (props) => {
           }
         })}
       </div>
+      {ukupnaCena >  0? (
+          <div className='checkout'>
+          <p>Ukupna cena: ${ukupnaCena}</p>
+          <button onClick={() => navigacija('/')}>Nastavi kupovinu</button>
+      </div>
+      ) : (
+        <h2>Vaša korpa je trenutno prazna</h2>
+      )}
     </div>
   )
 }
