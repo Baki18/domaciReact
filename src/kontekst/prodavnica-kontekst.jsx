@@ -22,9 +22,12 @@ const ukloniIzKorpe = (elId) => {
     setElKorpe((preth) => ({...preth, [elId]: preth[elId] - 1}))
 }
 
-const kontekstVrednost = {elKorpe, dodajUKorpu, ukloniIzKorpe};
+const azurirajBrojElUKorpi = (noviBrEl, elId) => {
+    setElKorpe((preth) => ({...preth, [elId]: noviBrEl}))
+}
 
-console.log(elKorpe)
+const kontekstVrednost = {elKorpe, dodajUKorpu, ukloniIzKorpe, azurirajBrojElUKorpi};
+
 
     return(
         <ProdavnicaKontekst.Provider value={kontekstVrednost}>

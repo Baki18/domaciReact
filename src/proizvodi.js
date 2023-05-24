@@ -21,37 +21,37 @@ export const PROIZVODI = [
         slikaProizvoda: proizvod2
     },
     {
-        id: 1,
+        id: 3,
         imeProizvoda: "Cannon M50 Camera",
         cena: 85.000,
         slikaProizvoda: proizvod3
     },
     {
-        id: 1,
+        id: 4,
         imeProizvoda: "WLS Van Gogh Denim Jacket",
         cena: 85.000,
         slikaProizvoda: proizvod4
     },
     {
-        id: 1,
+        id: 5,
         imeProizvoda: "LED Light Strips",
         cena: 85.000,
         slikaProizvoda: proizvod5
     },
     {
-        id: 1,
+        id: 6,
         imeProizvoda: "SPECTRUM LS TEE",
         cena: 85.000,
         slikaProizvoda: proizvod6
     },
     {
-        id: 1,
+        id: 7,
         imeProizvoda: "AUTO SERVICE SHIRT by GOLF WANG",
         cena: 85.000,
         slikaProizvoda: proizvod7
     },
     {
-        id: 1,
+        id: 8,
         imeProizvoda: "DON'T TRIP UNSTRUCTURED HAT",
         cena: 85.000,
         slikaProizvoda: proizvod8
